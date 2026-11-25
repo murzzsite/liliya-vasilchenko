@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Лилия Васильченко: репетитор по биологии, ОГЭ и ЕГЭ онлайн</title>
+<meta name="description" content="Индивидуальные онлайн-занятия для школьников 5–11 классов: биология, подготовка к ОГЭ и ЕГЭ. Находим пробелы в знаниях, выстраиваем программу и рассказываем родителям о прогрессе.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Найдём пробел в знаниях раньше, чем он станет оценкой">
+<meta property="og:description" content="Репетитор Лилия Васильченко: биология, ОГЭ и ЕГЭ, индивидуально и онлайн, 5–11 классы.">
+<meta name="theme-color" content="#F3F6EE">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300..800&family=Golos+Text:wght@400..700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="motion.css">
+<link rel="stylesheet" href="styles.css">
+<script src="motion.js" defer></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">К содержимому</a>
+
+<header class="bar" id="bar">
+  <a class="logo" href="#top" aria-label="Лилия Васильченко, репетитор, наверх">
+    <svg class="logo__mark" viewBox="0 0 64 64" aria-hidden="true"><polygon points="56,32 44,52.8 20,52.8 8,32 20,11.2 44,11.2" fill="#2E8B57"/><circle cx="32" cy="32" r="8" fill="#F3F6EE"/></svg>
+    <span class="logo__t"><b>Лилия Васильченко</b><small>репетитор, 5–11 классы</small></span>
+  </a>
+  <nav class="nav" aria-label="Разделы">
+    <a href="#map" data-roll>Как работаем</a>
+    <a href="#formats" data-roll>Форматы и цены</a>
+    <a href="#faq" data-roll>Вопросы</a>
+    <a href="#form" data-roll>Контакты</a>
+  </nav>
+  <a class="btn btn--sm" href="#form" data-magnetic><span class="xs-hide">Оставить заявку</span><span class="xs-only">Заявка</span></a>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="wrap hero__grid">
+    <div class="hero__txt">
+      <h1 data-wave data-wave-min="560" data-wave-max="800" data-wave-radius="200">Найдём пробел в знаниях раньше, чем он станет оценкой</h1>
+      <p class="hero__sub">Индивидуальные онлайн-занятия для школьников 5–11 классов: биология, подготовка к ОГЭ и ЕГЭ. Вам не нужно искать программу и проверять каждый урок: подбираем стратегию под ученика и рассказываем, как идёт прогресс.</p>
+      <div class="hero__cta">
+        <a class="btn" href="#form" data-magnetic>Оставить заявку</a>
+        <a class="btn btn--ghost" href="https://t.me/bio_ege_bot" target="_blank" rel="noopener" data-magnetic>Попробовать бота в Telegram</a>
+      </div>
+    </div>
+    <figure class="lensbox" id="lensbox">
+      <svg id="heroMap" role="img" aria-label="Карта школьной биологии с 5 по 11 класс: ячейки-темы. Линза-лупа находит среди них пробелы в знаниях и подсвечивает их розовым."></svg>
+      <div class="lenstag" id="lensTag" aria-hidden="true"></div>
+      <figcaption><span class="hand">проведите лупой: где пробелы?</span><small>Условная карта тем, не результат конкретного ученика.</small></figcaption>
+    </figure>
+  </div>
+  <div class="ticker" aria-hidden="true"><div class="ticker__t"><span>биология</span><span>ОГЭ</span><span>ЕГЭ</span><span>5–11 классы</span><span>индивидуально</span><span>онлайн</span><span>обратная связь родителям</span><span>биология</span><span>ОГЭ</span><span>ЕГЭ</span><span>5–11 классы</span><span>индивидуально</span><span>онлайн</span><span>обратная связь родителям</span></div></div>
+</section>
+
+<section class="manifest" aria-label="Почему пробелы важно закрывать вовремя">
+  <div class="wrap">
+    <p class="manifest__p" id="manifest">Тема не понята, оценка падает, а до экзамена всё ближе. Пробел проще закрыть сейчас, пока он один и пока на него не легли следующие темы.</p>
+  </div>
+</section>
+
+<section class="scene" id="map" aria-labelledby="sceneH">
+  <div class="scene__pin">
+    <div class="wrap scene__in">
+      <div class="scene__head">
+        <h2 id="sceneH">Как мы находим и закрываем пробелы</h2>
+        <p class="hand">листайте, карта заполняется</p>
+      </div>
+      <div class="scene__map">
+        <svg id="sceneMap" role="img" aria-label="Карта тем 5–11 классов. Сначала лупа находит пробелы, затем они нумеруются в программе, затем закрываются один за другим."></svg>
+        <div class="count" aria-live="off">
+          <span>Найдено пробелов <b id="nFound">0</b></span>
+          <span>Закрыто <b id="nFixed">0</b></span>
+        </div>
+        <small class="scene__note">Условная карта для примера.</small>
+      </div>
+      <ol class="steps" id="steps">
+        <li class="on"><b>Смотрим, что ученик знает на самом деле</b><small>Проходим по темам 5–11 классов и находим пробелы: что не усвоено и на что это повлияет дальше.</small></li>
+        <li><b>Выстраиваем индивидуальную программу</b><small>Подбираем стратегию под задачи ученика: сначала то, на что опираются следующие темы, и то, что нужно для экзамена.</small></li>
+        <li><b>Занимаемся онлайн, регулярно</b><small>Индивидуальные занятия, где разбирается именно то, что не получилось, а не весь класс сразу.</small></li>
+        <li><b>Показываем динамику вам</b><small>Вы получаете обратную связь о прогрессе и не проверяете уроки сами.</small></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="sec shift" id="shift">
+  <div class="wrap shift__grid">
+    <div data-reveal>
+      <h2>Что вы перестаёте делать сами</h2>
+      <ul class="crossed" id="crossed">
+        <li><span>искать надёжного преподавателя</span></li>
+        <li><span>составлять программу подготовки</span></li>
+        <li><span>проверять каждый урок и домашнее задание</span></li>
+        <li><span>гадать, что на самом деле понимает ребёнок</span></li>
+      </ul>
+    </div>
+    <div class="instead" data-reveal>
+      <h3>Что делаем мы</h3>
+      <ul class="ticks" data-stagger>
+        <li>Подбираем стратегию под задачи ученика</li>
+        <li>Выстраиваем индивидуальную программу</li>
+        <li>Проводим регулярные индивидуальные занятия онлайн</li>
+        <li>Контролируем динамику</li>
+        <li>Даём вам обратную связь о прогрессе</li>
+        <li>Помогаем устранить пробелы и подготовиться к экзаменам</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec formats" id="formats">
+  <div class="wrap">
+    <div class="sec__head" data-reveal>
+      <h2>Выберите класс и посмотрите формат</h2>
+    </div>
+    <div class="tabs" data-pill role="tablist" aria-label="Класс ученика">
+      <button type="button" data-pill-item role="tab" id="tab-a" aria-controls="pan-a" aria-selected="true">5–8 кл.</button>
+      <button type="button" data-pill-item role="tab" id="tab-b" aria-controls="pan-b" aria-selected="false">9 кл. ОГЭ</button>
+      <button type="button" data-pill-item role="tab" id="tab-c" aria-controls="pan-c" aria-selected="false">10–11 кл. ЕГЭ</button>
+    </div>
+    <div class="panels" id="panels">
+      <div class="panel on" id="pan-a" role="tabpanel" aria-labelledby="tab-a">
+        <div class="panel__l">
+          <h3>Школьные предметы</h3>
+          <p>Индивидуальные занятия онлайн, чтобы вернуть уверенность в предмете: разбираем темы, которые не легли, и закрываем пробелы, пока они не повлияли на оценки и контрольные.</p>
+          <ul class="ticks">
+            <li>Программа под задачи ученика</li>
+            <li>Регулярные занятия онлайн</li>
+            <li>Обратная связь родителям о прогрессе</li>
+          </ul>
+        </div>
+        <div class="panel__r">
+          <div class="price"><b>12 000 ₽</b><span>в месяц, 8 занятий. Это средний чек</span></div>
+        </div>
+      </div>
+      <div class="panel" id="pan-b" role="tabpanel" aria-labelledby="tab-b" hidden>
+        <div class="panel__l">
+          <h3>Подготовка к ОГЭ</h3>
+          <p>Системная подготовка: что повторить, в каком порядке и как отрабатывать задания. Вы получаете понятный план и обратную связь, а не тревогу за месяц до экзамена.</p>
+          <ul class="ticks">
+            <li>Абонемент на подготовку</li>
+            <li>Устранение пробелов по темам</li>
+            <li>Занятия по школьным предметам идут отдельно: средний чек 12 000 ₽ в месяц, 8 занятий</li>
+          </ul>
+        </div>
+        <div class="panel__r">
+          <div class="price price--txt"><b>Зависит от предмета и количества занятий</b><span>Напишите, какой предмет и сколько времени до экзамена: ответим по стоимости</span></div>
+        </div>
+      </div>
+      <div class="panel" id="pan-c" role="tabpanel" aria-labelledby="tab-c" hidden>
+        <div class="panel__l">
+          <h3>Подготовка к ЕГЭ</h3>
+          <p>Абонемент на подготовку и индивидуальная программа под целевой балл. По биологии ориентир, к которому мы выстраиваем работу, 80–95+ баллов. Это цель, а не гарантия результата.</p>
+          <ul class="ticks">
+            <li>Абонемент на подготовку</li>
+            <li>Устранение пробелов по темам</li>
+            <li>Занятия по школьным предметам идут отдельно: средний чек 12 000 ₽ в месяц, 8 занятий</li>
+          </ul>
+        </div>
+        <div class="panel__r">
+          <div class="price price--txt"><b>Зависит от предмета и количества занятий</b><span>Напишите, какой предмет и сколько времени до экзамена: ответим по стоимости</span></div>
+        </div>
+      </div>
+    </div>
+    <p class="formats__note" data-reveal>Есть и дополнительные индивидуальные занятия, если нужно устранить пробелы по отдельным темам.</p>
+  </div>
+</section>
+
+<section class="sec faq" id="faq">
+  <div class="wrap faq__grid">
+    <div class="sec__head" data-reveal>
+      <h2>Что родители спрашивают чаще всего</h2>
+    </div>
+    <div class="faq__list" data-stagger>
+      <details open>
+        <summary>Дорого, можно найти дешевле</summary>
+        <div class="faq__body"><p>Школьные предметы: средний чек 12 000 ₽ в месяц за 8 занятий. Вы платите не только за урок, а за индивидуальную программу, контроль динамики и обратную связь вам. Не нужно самим искать, согласовывать и проверять: это ваше время.</p><p>Если нужно закрыть пробел по одной теме, есть дополнительные индивидуальные занятия.</p></div>
+      </details>
+      <details>
+        <summary>В школе хорошо объясняют</summary>
+        <div class="faq__body"><p>Хорошо, когда так. Но в классе у учителя нет возможности вернуться к тому, что осталось непонятным у одного ученика, а пробел заметен, когда следующая тема на него опирается. Индивидуальные занятия идут по тому, что нужно именно вашему ребёнку, и дополняют школу, а не заменяют её.</p></div>
+      </details>
+      <details>
+        <summary>Ребёнок сам подготовится</summary>
+        <div class="faq__body"><p>Многие справляются сами. Но к ОГЭ и ЕГЭ трудно со стороны увидеть, какие темы провалены, и выстроить порядок повторения. Мы берём на себя программу и регулярность, самостоятельная работа остаётся, но с понятным планом.</p></div>
+      </details>
+      <details>
+        <summary>Не уверены, что допзанятия дадут результат</summary>
+        <div class="faq__body"><p>Гарантировать баллы честно нельзя, и мы их не обещаем. Для ЕГЭ по биологии ориентир, к которому идём, 80–95+ баллов. А по ходу работы вы видите динамику: мы контролируем её и сообщаем вам, как идёт прогресс.</p></div>
+      </details>
+      <details>
+        <summary>И так большая нагрузка</summary>
+        <div class="faq__body"><p>Занятия индивидуальные и онлайн: никуда ехать не нужно. Программа строится под задачи ученика, без лишнего: разбираем то, что действительно нужно для оценок и экзамена.</p></div>
+      </details>
+      <details>
+        <summary>Попробуем сами</summary>
+        <div class="faq__body"><p>Это можно. Если замечаете, что темы не усваиваются, оценки падают или вы вечерами проверяете домашние задания, напишите: обсудим задачи ученика и скажем, нужны ли занятия.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="sec form" id="form">
+  <div class="wrap form__box">
+    <div data-reveal>
+      <h2>Расскажите о задаче ученика</h2>
+      <p class="form__lead">Укажите класс, предмет и что беспокоит: оценки, конкретная тема или экзамен. Ответим и предложим первый шаг.</p>
+      <ul class="links">
+        <li><a href="https://t.me/biology_lv" target="_blank" rel="noopener">Telegram-канал <span>@biology_lv</span></a></li>
+        <li><a href="https://vk.ru/liliya_vasilchenko" target="_blank" rel="noopener">ВКонтакте <span>vk.ru/liliya_vasilchenko</span></a></li>
+        <li><a href="https://t.me/bio_ege_bot" target="_blank" rel="noopener">Бот в Telegram <span>@bio_ege_bot</span></a></li>
+        <li class="links__txt">Rutube <span>Liliya_Vasilchenko</span></li>
+      </ul>
+    </div>
+    <form class="fm" id="leadForm" novalidate data-reveal>
+      <label>Как к вам обращаться<input type="text" name="name" autocomplete="name" required></label>
+      <label>Телефон или мессенджер<input type="text" name="contact" autocomplete="tel" required placeholder="+7… или @ник"></label>
+      <div class="fm__row">
+        <label>Класс ученика
+          <select name="grade">
+            <option>5 класс</option><option>6 класс</option><option>7 класс</option><option>8 класс</option>
+            <option>9 класс</option><option>10 класс</option><option>11 класс</option>
+          </select>
+        </label>
+        <label>Предмет
+          <select name="subject" id="subject">
+            <option>Биология</option>
+            <option>Биология: подготовка к ОГЭ</option>
+            <option>Биология: подготовка к ЕГЭ</option>
+            <option>Другой школьный предмет</option>
+            <option>Пока не знаю</option>
+          </select>
+        </label>
+      </div>
+      <label>Запрос<textarea name="comment" placeholder="Что беспокоит: оценки, тема, экзамен. Какой предмет, если другой"></textarea></label>
+      <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label class="agree"><input type="checkbox" name="consent" id="consent"><span>Даю согласие на обработку персональных данных по <a href="privacy.html" target="_blank" rel="noopener">политике конфиденциальности</a></span></label>
+      <button class="btn" type="submit" data-magnetic>Отправить заявку</button>
+      <p class="fm__msg" id="msg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Лилия Васильченко · репетитор, 5–11 классы, онлайн</span>
+    <span><a href="privacy.html">Политика конфиденциальности</a></span>
+  </div>
+</footer>
+</body>
+</html>
