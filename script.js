@@ -233,12 +233,12 @@ const TG_LINK = 'https://t.me/biology_lv'; // резерв: заявка в Tele
     delete payload.consent;
     const tgText = 'Заявка с сайта. Имя: ' + payload.name + '. Контакт: ' + payload.contact + '. ' + payload.comment;
     const tgLink = TG_LINK + '?text=' + encodeURIComponent(tgText);
-    btn.disabled = true; btn.textContent = 'Отправляем...';
+    btn.disabled = true; btn.textContent = 'Отправляю...';
     const ctrl = new AbortController(), timer = setTimeout(() => ctrl.abort(), 8000);
     try {
       const r = await fetch(LEAD_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload), signal: ctrl.signal });
       if (!r.ok) throw new Error('HTTP ' + r.status);
-      msg.textContent = 'Заявка отправлена. Скоро свяжемся.'; form.reset();
+      msg.textContent = 'Заявка отправлена. Скоро свяжусь.'; form.reset();
     } catch (err) {
       console.error(err);
       msg.textContent = 'Заявка не ушла автоматически. Отправьте её одним касанием в Telegram: ';
@@ -247,5 +247,16 @@ const TG_LINK = 'https://t.me/biology_lv'; // резерв: заявка в Tele
     } finally {
       clearTimeout(timer); btn.disabled = false; btn.textContent = orig;
     }
+  });
+
+  // ===== документы крупно =====
+  safe(() => {
+    const lb = $('#lb'); if (!lb || !lb.showModal) return;
+    const img = $('#lbImg'), cap = $('#lbCap');
+    $$('#docs button').forEach(b => b.addEventListener('click', () => {
+      img.src = b.dataset.full; img.alt = b.dataset.cap; cap.textContent = b.dataset.cap;
+      lb.showModal();
+    }));
+    lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
   });
 })();
